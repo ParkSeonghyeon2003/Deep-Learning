@@ -1,3 +1,6 @@
+# Models
+models/
+
 # Virtual environments
 .venv/
 venv/
