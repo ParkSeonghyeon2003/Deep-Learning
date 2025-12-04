@@ -1,5 +1,7 @@
 
 # stdio 연결을 위한 서버 매개변수 생성
+import os
+import sys
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
 from langchain_mcp_adapters.tools import load_mcp_tools
@@ -10,11 +12,15 @@ import asyncio
 # LLM 모델 설정
 model = ChatOllama(model="PetrosStav/gemma3-tools:4b")
 
+# Get the absolute path to the server script
+current_dir = os.path.dirname(os.path.abspath(__file__))
+server_script_path = os.path.join(current_dir, "ch17_mcp_server.py")
+
 # 서버 매개변수 구성
 server_params = StdioServerParameters(
-    command="python",
+    command=sys.executable,
     # 서버 파일 경로 지정
-    args=["D:/OneDrive - 단국대학교/2025강의/딥러닝/source_code/chap17_mcp_server.py"],
+    args=[server_script_path],
 )
 
 async def run_agent(query):
