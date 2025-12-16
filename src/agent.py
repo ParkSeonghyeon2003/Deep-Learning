@@ -10,7 +10,7 @@ from langchain_core.output_parsers import StrOutputParser
 
 from llm import get_llm
 from utils import format_search_results, extract_urls
-from logging_utils import section, step, info, success, warn, error, search as log_search, llm as log_llm
+from logging_utils import section, step, info, success, search as log_search, llm as log_llm
 
 # .env 파일에서 환경 변수 로드
 load_dotenv()
@@ -239,8 +239,7 @@ def generate_report(topic: str) -> Dict[str, Any]:
         success("리포트 생성 완료")
         return {
             "report": report,
-            "sources": sources,
-            "raw_results": search_results
+            "sources": sources
         }
         
     except (ValueError, ConnectionError) as e:

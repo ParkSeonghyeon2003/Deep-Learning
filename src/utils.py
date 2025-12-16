@@ -1,9 +1,10 @@
 """
 유틸리티 함수 모듈
 """
+import os
 from typing import List, Dict, Any
 from datetime import datetime
-from logging_utils import info, success, debug
+from logging_utils import info, success
 
 
 def format_search_results(search_results: List[Dict[str, Any]]) -> str:
@@ -62,8 +63,6 @@ def save_report(report: str, topic: str, sources: List[str], output_dir: str = "
     Returns:
         str: 저장된 파일 경로
     """
-    import os
-    
     # 디렉토리 생성
     os.makedirs(output_dir, exist_ok=True)
     

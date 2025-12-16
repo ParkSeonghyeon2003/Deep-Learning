@@ -6,7 +6,6 @@
 - LOG_LEVEL: DEBUG / INFO(기본) / WARN / ERROR
 """
 import os
-import sys
 from typing import Optional, Dict
 
 
@@ -39,8 +38,6 @@ ICONS = {
     "image": "🖼️",
     "search": "🔎",
     "llm": "🤖",
-    "link": "🔗",
-    "gear": "⚙️",
     "rocket": "🚀",
     "bug": "🪲",
 }
@@ -116,10 +113,6 @@ def error(msg: str, kv: Optional[Dict[str, str]] = None) -> None:
 
 def step(msg: str, kv: Optional[Dict[str, str]] = None) -> None:
     _log("INFO", msg, icon="step", color="blue", kv=kv)
-
-
-def image(msg: str, kv: Optional[Dict[str, str]] = None) -> None:
-    _log("INFO", msg, icon="image", color="magenta", kv=kv)
 
 
 def search(msg: str, kv: Optional[Dict[str, str]] = None) -> None:

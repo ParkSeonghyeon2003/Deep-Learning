@@ -2,7 +2,7 @@
 LLM 모듈: Ollama를 사용한 로컬 LLM 초기화
 """
 from langchain_ollama import ChatOllama
-from logging_utils import llm as log_llm, success, info
+from logging_utils import llm as log_llm, success
 
 
 def get_llm() -> ChatOllama:
