@@ -122,7 +122,6 @@ Tech_Trend_Researcher/
 │   ├── llm.py             # Ollama LLM 초기화
 │   ├── utils.py           # 유틸리티 함수 (저장/검증 포함)
 │   └── logging_utils.py   # 터미널 예쁜 로그 유틸리티
-├── reports/               # 생성된 리포트 저장 (자동 생성)
 ├── .env                   # API Key 설정 (선택)
 ├── pyproject.toml         # 프로젝트 메타데이터 및 의존성
 └── README.md              # 프로젝트 문서
@@ -237,3 +236,4 @@ MIT License
 - [Tavily](https://tavily.com) - AI 에이전트 전용 검색 API
 - [LangChain](https://langchain.com) - AI 애플리케이션 프레임워크
 - [Streamlit](https://streamlit.io) - 웹 UI 프레임워크
+
