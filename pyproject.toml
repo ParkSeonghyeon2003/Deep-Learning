@@ -1,0 +1,22 @@
+[project]
+name = "tech-trend-researcher"
+version = "0.1.0"
+description = "AI-powered Korean tech report generator using local LLM (Ollama) and Tavily search API"
+authors = [
+    {name = "ParkSeonghyeon2003",email = "shpark8267@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10,<4.0"
+dependencies = [
+    "streamlit (>=1.52.1,<2.0.0)",
+    "langchain (>=1.1.2,<2.0.0)",
+    "langchain-community (>=0.4.1,<0.5.0)",
+    "langchain-ollama (>=1.0.0,<2.0.0)",
+    "langchain-tavily (>=0.2.13,<0.3.0)",
+    "python-dotenv (>=1.2.1,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

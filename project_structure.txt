@@ -1,0 +1,13 @@
+local-insight-agent/
+├── .env                # API Key (Tavily) 저장 (Git 제외)
+├── .gitignore          # .env, __pycache__ 등 제외 설정
+├── pyproject.toml      # Poetry 의존성 관리 파일
+├── poetry.lock         # 패키지 잠금 파일
+├── README.md           # 프로젝트 설명 및 실행법
+├── src/                # 소스 코드 디렉토리
+│   ├── __init__.py
+│   ├── main.py         # Streamlit UI 진입점 (App.py 역할)
+│   ├── agent.py        # LangChain 에이전트 로직 (LLM + Tools)
+│   ├── llm.py          # Ollama 모델 초기화 및 설정
+│   └── utils.py        # 텍스트 전처리 등 유틸리티 함수
+└── reports/            # 생성된 리포트를 파일로 저장할 폴더 (선택 사항)
