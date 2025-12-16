@@ -41,7 +41,7 @@
 ### 소프트웨어
 
 - Python 3.10 이상
-- Poetry
+- Poetry (선택)
 - Ollama
 
 ## 🚀 설치 및 실행
@@ -49,8 +49,7 @@
 ### 1. 저장소 클론
 
 ```bash
-git clone <repository-url>
-cd Tech_Trend_Researcher
+git clone https://github.com/ParkSeonghyeon2003/Deep-Learning.git
 ```
 
 ### 2. 의존성 설치
@@ -236,4 +235,5 @@ MIT License
 - [Tavily](https://tavily.com) - AI 에이전트 전용 검색 API
 - [LangChain](https://langchain.com) - AI 애플리케이션 프레임워크
 - [Streamlit](https://streamlit.io) - 웹 UI 프레임워크
+
 
